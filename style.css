@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-family: "Roboto Slab", serif;
+}
+
+.header {
+  /* margin-top: 1%; */
+  padding: 20px;
+  position: fixed;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+.header li {
+  list-style-type: none;
+}
+.profile {
+  /* margin: 0px 10px; */
+
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline;
+  /* padding: 15px; */
+}
+.profile p {
+  color: rgb(241, 79, 38);
+  display: inline;
+}
+
+.social {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.social li i {
+  list-style-type: none;
+  color: black;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 30px;
+  /* margin: 0px auto; */
+}
+/* .social li {
+  margin: 0px 25px;
+} */
+
+.nav {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 5%;
+  /* justify-content: end; */
+}
+.nav a {
+  color: black;
+  /* padding: 15px 30px; */
+  text-decoration: none;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    order: 2;
+  }
+  .profile {
+    order: 1;
+  }
+  .social {
+    padding: 15px;
+    flex: 1 1 0;
+    order: 3;
+  }
+  .nav a {
+    font-size: 20px;
+  }
+  .profile {
+    font-size: 20px;
+  }
+  .header li {
+    margin: 0px auto;
+  }
+}
+
+/* first section complete */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.writing {
+  padding-left: 10%;
+  display: flex;
+
+  font-size: 50px;
+  flex: 60%;
+  justify-content: right;
+}
+.image {
+  display: flex;
+  justify-content: center;
+}
+.image img {
+  width: 70%;
+}
+.writing span {
+  color: rgb(241, 79, 38);
+}
+.hello {
+  font-size: 43px;
+}
+.home p {
+  font-size: 30px;
+  color: grey;
+}
+@media only screen and (max-width: 768px) {
+  .writing {
+    font-size: 10px;
+  }
+  .home p {
+    font-size: 20px;
+  }
+  .hello {
+    font-size: 10px;
+  }
+  .home {
+    height: 50vh;
+    flex-direction: column;
+  }
+}
+/* -------------------------------------------------------- */
+.skillshead {
+  padding-top: 7%;
+  color: black;
+  font-size: 25px;
+  /* padding-top: 5%; */
+  text-align: center;
+}
